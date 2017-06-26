@@ -1,1 +1,3 @@
-alert("CONNECTED!");
+$("li").click(function(){
+	$(this).toggleClass("completed");
+});
