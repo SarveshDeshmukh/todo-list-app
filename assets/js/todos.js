@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $("input[type='text']").fadeOut(0);
+});
 //Check Off specific Todos by clicking
 
 $("ul").on("click" , "li" ,function(){
@@ -20,6 +23,11 @@ $("input[type='text']").keypress(function(event){
 	 	var todoText = $(this).val();
 	 	$(this).val("");
 	 	//Create a new li and add to ul  
-	 	$("ul").append("<li><span>X </span>" + todoText + "</li>" );
+	 	$("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>" );
 	}
+});
+
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+
 });
