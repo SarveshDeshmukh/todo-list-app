@@ -1,4 +1,5 @@
 # The ToDo List Project
 
-Document will be updated soon...
+This is a jQuery based ToDo app with heavy focus on CSS, HTML and styling animations.
+
     
